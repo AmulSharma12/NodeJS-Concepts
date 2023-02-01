@@ -59,6 +59,17 @@
 - press double time tab to see all modules.
 - enter the name of module to get all the details.
 
+<hr style="border-color:#FF4500;">
+
+## 🚀Core Modules in NodeJS
+
+- NodeJS is a set of built-in modules which you can use without further installation.
+- fs - File system module for files and folders.
+  - writeFileSync()
+  - appendFileSync()
+  - renameFileSync()
+
+
 
 <hr style="border-color:#FF4500;"> 
  🔗 Follow Me 👇🏻
