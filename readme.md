@@ -68,6 +68,17 @@
   - writeFileSync()
   - appendFileSync()
   - renameFileSync()
+  - readFileSync()
+  - writeFile()
+  - appendFile()
+  - readFile()
+  
+- NOTE 
+  - while reading file we automatically get buffer data
+            if you have to read without buffer data first must give file encoding as an argument. readFile('file', 'utf-8')
+  - In, Asynchronus function the first argument of the callback is always an error.
+
+   
 
 
 
