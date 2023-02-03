@@ -85,7 +85,10 @@
   - platform()
   - type()
   - arch()
-
+- path - path module for working with directory and files path.
+  - basename('path') - give the file name with extension.
+  - extname('path') - give the extension name of the file.
+  - parse('path') - give the details of the hierarchy.
 
  <hr style="border-color:#FF4500;">
 
