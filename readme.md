@@ -55,9 +55,12 @@
 - E (Eval) -> Evaluates the javascript data structure.
 - P (Print) -> Print the result.
 - L (Loop) -> Loops the above command untill the user presses ctrl-c twice.
-- To start the Repl - type node in cmd
+- To start the Repl 
+  - type node and press enter.
 - press double time tab to see all modules.
+  - this will give you all the modules that is suported by nodeJS version that you have installed.
 - enter the name of module to get all the details.
+  - for example - type fs and press enter.
 
 <hr style="border-color:#FF4500;">
 
@@ -78,7 +81,16 @@
             if you have to read without buffer data first must give file encoding as an argument. readFile('file', 'utf-8')
   - In, Asynchronus function the first argument of the callback is always an error.
 
-   
+ <hr style="border-color:#FF4500;">
+
+## 🚀Synchronous vs Asynchrounous Programming 
+
+- Synchronous Programming
+  - In this, the current instruction then completely executed then the next instruction will execute.
+
+- Asynchronous Programming
+  - In this, if the instruction have need of I/O performance or network call then next set of instruction will execute.
+
 
 
 
