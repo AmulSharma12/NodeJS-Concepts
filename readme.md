@@ -80,6 +80,12 @@
   - while reading file we automatically get buffer data
             if you have to read without buffer data first must give file encoding as an argument. readFile('file', 'utf-8')
   - In, Asynchronus function the first argument of the callback is always an error.
+- os - os module for operating sytem .
+  - hostname()
+  - platform()
+  - type()
+  - arch()
+
 
  <hr style="border-color:#FF4500;">
 
