@@ -186,6 +186,38 @@ nodemon fileName.js
 
 
 
+<hr style="border-color:#FF4500;">
+
+## 🚀 Creating own server in NodeJS
+
+- Understand the basics first 💫
+- For any web application we need web server that will handle the incoming http requests.
+- Some web server examples :-
+  - IIS - Asp.net web application
+  - Apache - php/java web application
+- NodeJS allows us to create our own web server that can handle the http request asynchrounously.
+- You can run IIS/Apache for NodeJS web application but NodeJS web server is recommended.
+- Steps for creating web server :-
+  1. Require the http module
+  
+  ```javascript
+  const http = require('http'); 
+  ```
+  2. http.createServer() allows us to create server it takes 2 parameters request, response 
+  3. request object used to get the information about the current http request. e.g. url, data, http header
+  ```javascript
+  const server = http.createServer((req, res)=>{
+    res.end('response from the other side');
+  });
+  ```
+  4. You have to listen the incoming http request
+  ```javascript
+  server.listen(8000,'127.0.0.1', ()=>{
+    console.log('listening to the port 8000');
+  })
+  ```
+- Conclusion - If you are a server, you must have to listen to the http requests. 
+
 
 
 <hr style="border-color:#FF4500;"> 
