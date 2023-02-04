@@ -112,22 +112,30 @@
   - Firstly, we give the implementation in the file/module and the variable/function you have to expose/export you can do  by using - module.exports
   
   - For exporting single function/variable
-    - module.exports = functionName
+   
+     ```
+     module.exports = functionName;
+     ```
   - For exporting multiple function/variable
-    - One way
-      - module.exports.anyNameHere = functionName
-    - Another Simple way (will recommend this to use)
-      - module.exports = {function1, function2,...,functionN}
+    ```
+    module.exports = {fun1, fun2};
+    ```
+    - you can give as much as you want.
+
 
 <hr>
 
 - Importing Module/file
   - In this, you will import the function which are exporting from other files.
   - For importing single function :-
-    - const variableName = require('FileRelativePath')
+    ```
+    const variableName = require('./file');
+    ```
+    - give the relative path of the file.
   - For importing multiple function :-
-    - use object destructuring {...} that is the best simple way
-    - const {fun1, fun2, fun3,...,funN}  = require('FileRelativePath')
+    ```
+    const {fun1, fun2} = require('./file');
+    ```
 - NOTE : In functions place you can use variables as well.
 
 
@@ -140,16 +148,42 @@
 - Steps to work with npm :-
   1. Initialise npm in your project.
      -  type npm init and press enter.
+       ```
+        npm init
+       ```
      - this will create package.json file.
      - package.json consist of the details of our project.
   2. Now you are good to go to install the packages.
      - type npm install package.
      -  for example - npm install chalk.
+       ```
+      npm install chalk
+       ```
      -  After installing our project look like this :-
         1. package will be added in dependecies in package.json.
         2. package.lock.json created which have detailed information about the packages.
         3. node_modules folder contains the code of that package
 - Now, do whatever you want to implement using that package!
+
+
+<hr style="border-color:#FF4500;">
+
+## 🚀 Nodemon in NodeJS
+
+- nodemon is a global npm module.
+- Global means it is independent of any specific project.
+- command for installating nodemon globally :-
+```
+npm install nodemon -g
+```
+- here -g is flag to install it globally.
+- To run any file :-
+```
+nodemon fileName.js
+```
+- Now, whenever you made changes it will automatically run your project.
+
+
 
 
 
