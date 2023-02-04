@@ -90,7 +90,7 @@
   - extname('path') - give the extension name of the file.
   - parse('path') - give the details of the hierarchy.
 
- <hr style="border-color:#FF4500;">
+<hr style="border-color:#FF4500;">
 
 ## 🚀Synchronous vs Asynchrounous Programming 
 
@@ -100,6 +100,56 @@
 - Asynchronous Programming
   - In this, if the instruction have need of I/O performance or network call then next set of instruction will execute.
 
+<hr style="border-color:#FF4500;">
+
+## 🚀 Import and Export Own Module in NodeJS
+
+- Exporting Module/file
+  - we usually export the module so its implementation can be utilise in some other files.
+  
+  - Basically write once, use as many times anywhere  - DRY principle.
+  
+  - Firstly, we give the implementation in the file/module and the variable/function you have to expose/export you can do  by using - module.exports
+  
+  - For exporting single function/variable
+    - module.exports = functionName
+  - For exporting multiple function/variable
+    - One way
+      - module.exports.anyNameHere = functionName
+    - Another Simple way (will recommend this to use)
+      - module.exports = {function1, function2,...,functionN}
+
+<hr>
+
+- Importing Module/file
+  - In this, you will import the function which are exporting from other files.
+  - For importing single function :-
+    - const variableName = require('FileRelativePath')
+  - For importing multiple function :-
+    - use object destructuring {...} that is the best simple way
+    - const {fun1, fun2, fun3,...,funN}  = require('FileRelativePath')
+- NOTE : In functions place you can use variables as well.
+
+
+<hr style="border-color:#FF4500;">
+
+## 🚀 NPM in NodeJS
+
+- npm stands for node package manager.
+- node package manager provide us the packages for the javascript runtime environment NodeJS.
+- Steps to work with npm :-
+  1. Initialise npm in your project.
+     -  type npm init and press enter.
+     - this will create package.json file.
+     - package.json consist of the details of our project.
+  2. Now you are good to go to install the packages.
+     - type npm install package.
+     -  for example - npm install chalk.
+     -  After installing our project look like this :-
+        1. package will be added in dependecies in package.json.
+        2. package.lock.json created which have detailed information about the packages.
+        3. node_modules folder contains the code of that package
+- Now, do whatever you want to implement using that package!
 
 
 
