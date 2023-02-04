@@ -182,6 +182,7 @@ npm install nodemon -g
 nodemon fileName.js
 ```
 - Now, whenever you made changes it will automatically run your project.
+- for killing nodemon terminal - press ctrl+c.
 
 
 
