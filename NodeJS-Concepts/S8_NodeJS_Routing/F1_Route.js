@@ -3,7 +3,7 @@
 // 💫    requiring  the http module.
 const http = require("http");
 
-// 💫    creating server
+// 💫  creating server
 const server = http.createServer((req, res) => {
   if (req.url == "/") res.end("response from the other side");
   else if (req.url == "/about") res.end("About page");
